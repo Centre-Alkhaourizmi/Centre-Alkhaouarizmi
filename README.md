@@ -67,10 +67,15 @@ Avant la mise en ligne, remplacez dans `index.html` :
 blocs `fr` et `ar`. Les éléments de la page portent un `data-i18n="clé"` correspondant.
 Pour modifier un texte, il suffit de changer la valeur dans les deux langues.
 
-**Langue par défaut** — français. Le choix du visiteur est mémorisé dans `localStorage` ;
-au premier passage, un navigateur en arabe ouvre la page en arabe. Le passage en arabe
-bascule la page en `dir="rtl"` (toute la mise en page se retourne : logo, hero, formulaire,
-flèches).
+**Langue par défaut — l'arabe.** Le HTML est servi en `lang="ar" dir="rtl"` avec les textes
+arabes déjà en place : la page s'affiche correctement dès le premier pixel, même avant que le
+JavaScript ne s'exécute (et même s'il est désactivé). Le choix du visiteur est ensuite mémorisé
+dans `localStorage` et prend le dessus à la visite suivante. Le passage en français repasse la
+page en `dir="ltr"` — toute la mise en page se retourne : logo, hero, formulaire, flèches.
+
+Pour repasser le défaut au français : dans `index.html`, mettez `const DEFAULT_LANG = 'fr';`
+(bas du `<script>`). Le premier affichage restera en arabe une fraction de seconde, sauf à
+remettre aussi les textes statiques et `<html lang="fr" dir="ltr">` en français.
 
 **Polices** — SF Pro pour le latin, SF Arabic pour l'arabe. Ce sont des polices système
 Apple : aucune requête réseau, rendu natif sur macOS / iOS. Sur Windows et Android, la pile

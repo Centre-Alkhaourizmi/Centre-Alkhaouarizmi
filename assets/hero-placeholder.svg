@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" width="800" height="620" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E8EFFE"/>
+      <stop offset="1" stop-color="#CFDDFB"/>
+    </linearGradient>
+    <linearGradient id="win" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".55"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="620" fill="url(#bg)"/>
+
+  <!-- window -->
+  <rect x="470" y="60" width="290" height="230" rx="10" fill="url(#win)"/>
+  <path d="M615 60v230M470 175h290" stroke="#C3D4F7" stroke-width="6"/>
+
+  <!-- whiteboard -->
+  <rect x="60" y="70" width="330" height="200" rx="10" fill="#FFFFFF"/>
+  <rect x="60" y="70" width="330" height="200" rx="10" fill="none" stroke="#C3D4F7" stroke-width="5"/>
+  <path d="M95 120h180M95 152h240M95 184h140M95 216h205" stroke="#B9CCF6" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- back row students -->
+  <g fill="#8FB0F3">
+    <circle cx="175" cy="352" r="30"/>
+    <path d="M125 425c0-28 22-50 50-50s50 22 50 50z"/>
+    <circle cx="330" cy="345" r="28"/>
+    <path d="M284 415c0-25 21-46 46-46s46 21 46 46z"/>
+  </g>
+  <rect x="90" y="425" width="300" height="16" rx="8" fill="#A9C1F6"/>
+
+  <!-- desk back -->
+  <rect x="470" y="360" width="270" height="14" rx="7" fill="#A9C1F6"/>
+  <g fill="#8FB0F3">
+    <circle cx="600" cy="300" r="28"/>
+    <path d="M554 360c0-25 21-46 46-46s46 21 46 46z"/>
+  </g>
+
+  <!-- foreground student -->
+  <g>
+    <circle cx="415" cy="330" r="58" fill="#1657F0"/>
+    <path d="M318 470c0-42 43-76 97-76s97 34 97 76z" fill="#1657F0"/>
+    <path d="M415 394c22 0 42 6 57 15l-57 61-57-61c15-9 35-15 57-15z" fill="#4C82F7"/>
+  </g>
+
+  <!-- front desk -->
+  <rect x="150" y="470" width="530" height="22" rx="11" fill="#1657F0" opacity=".18"/>
+  <rect x="180" y="492" width="26" height="90" rx="8" fill="#1657F0" opacity=".12"/>
+  <rect x="624" y="492" width="26" height="90" rx="8" fill="#1657F0" opacity=".12"/>
+
+  <!-- notebook + pen -->
+  <rect x="330" y="440" width="170" height="34" rx="6" fill="#FFFFFF"/>
+  <path d="M352 452h126M352 464h96" stroke="#C3D4F7" stroke-width="6" stroke-linecap="round"/>
+  <rect x="486" y="404" width="12" height="62" rx="6" fill="#0B47E0" transform="rotate(32 492 435)"/>
+</svg>
